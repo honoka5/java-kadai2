@@ -1,22 +1,15 @@
-import java.net.HttpURLConnection;
-import java.net.URL;
+public class  Tairiku extends Plant {
 
-import javax.net.ssl.HttpsURLConnection;
+    protected String getTitle() {
+        return "モウセンゴケ";
+    }
 
-public class tairiku {
-    
-    public static final String[] COUNTRY_STRINGS ={
-        "マレーシア","インドネシア","タイ","カンボジア","ラオス","オーストラリア",
-        "フィリピン","香港","マカオ","インド","","","","","","","",
+   
+    protected String getButtonLabel() {
+        return "モウセンゴケ";
+    }
 
-    };
-    URL url =new URL("http://services.bluekai.com/Services/WS/audiences");
-
-    HttpURLConnection con =(HttpURLConnection) url.openConnection();
-    con.setRequestMethod("GET");
-
-    con.connect();
-
-    
-
+    protected String getImagePath() {
+        return "IMG_0033.jpg"; // 画像3のパス
+    }
 }
